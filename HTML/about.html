@@ -32,6 +32,13 @@
       text-shadow: 2px 2px 5px #002080;
     }
 
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
     main {
       padding: 20px;
     }
@@ -52,7 +59,7 @@
       display: inline-block;
       padding: 10px 20px;
       background-color: #e41e00;
-      color: #22ff00;
+      color: #ffffff; /* Improved contrast */
       text-decoration: none;
       font-size: 18px;
       border-radius: 5px;
@@ -61,6 +68,12 @@
 
     .button:hover {
       background-color: #cc4b33;
+    }
+
+    @media (max-width: 600px) {
+      .image-row {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
